@@ -25,4 +25,7 @@ browser->>server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
 server-->>browser: [...,{"content":"Some post","date":"2022-12-20T00:34:47.622Z"}]
 
 Note left of browser: browser executes the event handler that renders notes to display
+
+browser->>server: HTTP GET https://studies.cs.helsinki.fi/favicon.ico
+server-->>browser: HTML-code
 ```
